@@ -1,0 +1,18 @@
+{
+  "name": "CommonCss",
+  "version": "0.0.1",
+  "homepage": "https://github.com/chinakids/CommonCss",
+  "authors": [
+    "chinakids <494063570@qq.com>"
+  ],
+  "description": "common css",
+  "main": "dest/common.min.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
