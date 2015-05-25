@@ -1,18 +1,23 @@
 //颜色声明
-@color-007dd4 : #007dd4; //主色调，按钮色，文字连接色，ui图标色
-@color-ff3300 : #ff3300; //主色调，按钮色ui图标色
-@color-dddddd : #dddddd; //分割线色
-@color-f6f6f6 : #f6f6f6; //搜索背景色
-@color-f0f0f0 : #f0f0f0; //首页下方背景色
-@color-ebebeb : #ebebeb; //菜单底色
-@color-fafafa : #fafafa; //文字背景色
-@color-333333 : #333333; //文字颜色
-@color-666666 : #666666; //文字颜色
-@color-999999 : #999999; //文字颜色
-@color-e4eefa : #e4eefa; //标参底色，进度条背景色,文字底色
-@color-a5c88e : #a5c88e; //底色
-@color-ffe500 : #ffe500; //按钮黄色
-@color-ffffff : #ffffff; //白色
+@color-default     : #007dd4;
+@color-main        : #ff3300;
+
+@color-gray        : #dddddd;
+@color-gray-light  : lighten(@color-gray, 5%);
+@color-gray-lighter: lighten(@color-gray, 10%);
+@color-white       : #ffffff;
+
+//文字
+@font-color        : #333333; //文字颜色
+@font-light        : #666666; //文字颜色
+@font-lighter      : #999999; //文字颜色
+
 //按钮
-@btn-default : @color-007dd4;
-@btn-default-hover : darken(@color-007dd4, 5%);
+@btn-default : @color-default;
+@btn-default-hover : darken(@color-default, 10%);
+
+@btn-main : @color-main;
+@btn-main-hover : darken(@color-main, 10%);
+
+@btn-gray : @color-gray;
+@btn-gray-hover :@color-gray;

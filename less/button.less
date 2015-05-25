@@ -1,19 +1,97 @@
 .btn{
   display: block;
-  padding: 4px 15px;
+  padding: 8px 10px;
+  .font(12);
   .f-l;
   margin:0 5px;
   border:1px solid transparent;
   text-align: center;
-  font-family:"Microsoft YaHei";
-  line-height: 20px;
+  line-height: 15px;
   cursor: pointer;
+  .transition(background-color,.2s);
+  &.btn-sm{
+    padding:8px 10px;
+    .font(12);
+  }
+  &.btn-xs{
+    padding: 8px 10px;
+    .font(14);
+  }
+  &.btn-lg{
+    padding: 10px 20px;
+    .font(16)
+  }
+  &.btn-default{
+    border-color: @btn-default;
+    background-color: @btn-default;
+    color: @color-white;
+    &:hover{
+      border-color: @btn-default-hover;
+      background-color: @btn-default-hover;
+      color: @color-white;
+    }
+  }
+  &.btn-default-o{
+    border-color: @btn-default;
+    background-color: @color-white;
+    color: @color-default;
+    &:hover{
+      border-color: @btn-default-hover;
+      background-color: @color-white;
+      color: @color-default;
+    }
+  }
+  &.btn-no{
+    border-color: @color-white;
+    background-color: @color-white;
+    color: @color-default;
+    &:hover{
+      border-color: @color-white;
+      background-color: @color-white;
+      color: @color-default;
+    }
+  }
+  &.btn-main{
+    border-color: @btn-main;
+    background-color: @btn-main;
+    color: @color-white;
+    &:hover{
+      border-color: @btn-main-hover;
+      background-color: @btn-main-hover;
+      color: @color-white;
+    }
+  }
+  &.btn-disable{
+    border-color: @btn-gray;
+    background-color: @btn-gray;
+    color: @color-white;
+    &:hover{
+      background-color: @btn-gray-hover;
+      color: @color-white;
+    }
+  }
 }
-.btn-default{
-  background-color: @btn-default;
-  color: @color-ffffff;
+.btn-close{
+  background-image: url(../../images/btn/btn.png);
+  background-repeat: no-repeat;
+  background-position: 1px 1px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  .rotate(0);
+  .transition(transform,.2s);
+  &:hover{
+    .rotate(90deg);
+  }
+  &.btn-sm{
+    background-position: -45px 6px;
+  }
 }
-.btn-default:hover{
-  background-color: @btn-default-hover;
-  color: @color-ffffff;
+.btn-back{
+  background-image: url(../../images/btn/btn.png);
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  display: block;
+  width: 25px;
+  height: 25px;
 }

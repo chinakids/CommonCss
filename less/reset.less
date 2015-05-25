@@ -3,18 +3,24 @@ html{
 }
 body {
   font-family:'Tahoma', 'Arial', 'Helvetica', '宋体', 'sans-serif';
-  color: @color-333333;
+  color: @font-color;
   margin: 0;
   padding: 0;
   .font(12);
 }
-a {
+a{
   text-decoration: none;
-  color: @color-333333;
+  color: @font-color;
   .transition(color,.2s);
-}
-a:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &.href{
+    text-decoration: underline;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 p{
   line-height: 25px;
