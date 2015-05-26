@@ -23,29 +23,6 @@
         padding: 0 12px;
       }
     }
-    .arrow{
-      a{
-        position: relative;
-        padding-right: 16px;
-        &::after{
-          content: '';
-          display: block;
-          height: 8px;
-          width: 8px;
-          background: url(../../images/ico/arrow.png) 0 0 no-repeat;
-          background-size: 100% 100%;
-          position: absolute;
-          top:50%;
-          margin-top: -4px;
-          right: 4px;
-          .rotate(0);
-          .transition(transform,.2s);
-        }
-        &:hover::after{
-          .rotate(180deg);
-        }
-      }
-    }
   }
   .login{
     padding: 17px 0;
