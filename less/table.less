@@ -1,0 +1,70 @@
+/*
+    table.less   表格相关
+ */
+
+table{
+  border-collapse:collapse;
+  td{
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  tr{
+    &.odd{
+      td{
+        background: @color-gray-lighter;
+      }
+    }
+    &.even{
+      td{
+        background: lighten(@color-default,50%);
+      }
+    }
+  }
+  thead{
+    td{
+      background: lighten(@color-default,50%);
+    }
+  }
+  .t-l{
+    text-align: left;
+  }
+  .t-r{
+    text-align: right;
+  }
+}
+.table-a{
+  td{
+    border:1px solid @color-gray;
+  }
+  thead{
+    td{
+      border-top: 2px solid @color-default;
+      border-bottom-color: transparent;
+      &:first-child{
+        width: 150px;
+      }
+    }
+  }
+}
+.table-b{
+  td{
+    border-bottom:1px solid @color-gray;
+  }
+  thead{
+    td{
+      border-bottom-color: transparent;
+      font-weight: 800;
+    }
+  }
+  // tbody{
+  //   tr{
+  //     &:last-child{
+  //       td{
+  //         border-bottom-color:transparent;
+  //       }
+  //     }
+  //   }
+  // }
+}

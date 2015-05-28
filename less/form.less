@@ -18,12 +18,35 @@
       width: 435px;
     }
     .btn{
+      padding: 0;
       width: 85px;
       height: 40px;
       position: absolute;
       top:-1px;
       right:-1px;
       margin: 0;
+      .font(14);
+    }
+  }
+  &.search-sm{
+    .search-box{
+      height: 24px;
+      width: 270px;
+      input{
+        line-height: 24px;
+        width: 180px;
+      }
+      .btn{
+        width: 70px;
+        height: 26px;
+        background: @color-gray-light;
+        border-color: @color-gray;
+        color:@font-color;
+        .font(12);
+        &:hover{
+          background: @color-gray;
+        }
+      }
     }
   }
 }
