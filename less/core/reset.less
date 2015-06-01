@@ -3,27 +3,13 @@
  */
 html{
   font-size: 10px;
+  font-family:'Tahoma', 'Arial', 'Helvetica', '宋体', 'sans-serif','微软雅黑';
 }
 body {
-  font-family:'Tahoma', 'Arial', 'Helvetica', '宋体', 'sans-serif';
   color: @font-color;
   margin: 0;
   padding: 0;
   .font(12);
-}
-a{
-  text-decoration: none;
-  color: @font-color;
-  .transition(color,.2s);
-  &:hover {
-    text-decoration: none;
-  }
-  &.href{
-    text-decoration: underline;
-    &:hover{
-      text-decoration: underline;
-    }
-  }
 }
 p{
   line-height: 25px;
@@ -67,7 +53,7 @@ h6{
   display: inline-block;
 }
 .f-n {
-  float: none !important
+  float: none !important;
 }
 .cf:before,
 .cf:after {
