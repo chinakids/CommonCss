@@ -5,16 +5,42 @@
   .font(12);
   li{
     padding: 4px 6px;
+    position: relative;
     .f-l;
     background: @color-white;
     border: 1px solid @color-gray;
     margin-right: 5px;
+    ul{
+      display: none;
+      position: absolute;
+      top:28px;
+      left: -1px;
+      z-index: 99;
+      li{
+        width: 110px;
+        background-color: @color-white;
+        line-height: 30px;
+        border-bottom-color:transparent;
+        &:hover{
+          background-color: @color-gray-light;
+        }
+        &:last-child{
+          border-bottom-color: @color-gray;
+        }
+      }
+    }
+    &:hover{
+      ul{
+        display: block;
+      }
+    }
   }
 }
 .tag-sm{
   .font(11);
   li{
     padding: 0px 6px;
+    position: relative;
     .f-l;
     color:@color-white;
     background: lighten(@color-default,50%);
