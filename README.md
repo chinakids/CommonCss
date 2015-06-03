@@ -1,2 +1,5 @@
 # CommonCss
-一个自用的css构件库
+
+css构建骨架，适应项目的快速搭建
+
+`install` : bower install https://github.com/chinakids/CommonCss.git --save
