@@ -1,0 +1,22 @@
+{
+  "name": "CommonCss",
+  "version": "0.0.1",
+  "description": "一个自用的css构件库",
+  "main": "dest/core/core.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chinakids/CommonCss.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "chinakids",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chinakids/CommonCss/issues"
+  },
+  "homepage": "https://github.com/chinakids/CommonCss"
+}
