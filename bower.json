@@ -6,7 +6,10 @@
     "chinakids <494063570@qq.com>"
   ],
   "description": "common css",
-  "main": "dest/common.min.css",
+  "main": [
+    "dest/css/common.min.css",
+    "dest/js/common.min.js"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
