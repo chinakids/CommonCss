@@ -4,26 +4,25 @@
 
 table{
   border-collapse:collapse;
-  td{
+  td,th{
     line-height: 40px;
-    height: 40px;
     text-align: center;
     padding: 0 10px;
   }
   tr{
     &.odd{
-      td{
+      td,th{
         background: @color-gray-lighter;
       }
     }
     &.even{
-      td{
+      td,th{
         background: fadeout(@color-default, 85%);
       }
     }
   }
   thead{
-    td{
+    td,th{
       background: fadeout(@color-default, 85%);
     }
   }
@@ -35,11 +34,11 @@ table{
   }
 }
 .table-a{
-  td{
+  td,th{
     border:1px solid @color-gray;
   }
   thead{
-    td{
+    td,th{
       border-top: 2px solid @color-default;
       border-bottom-color: transparent;
       &:first-child{
@@ -49,22 +48,13 @@ table{
   }
 }
 .table-b{
-  td{
+  td,th{
     border-bottom:1px solid @color-gray;
   }
   thead{
-    td{
+    td,th{
       border-bottom-color: transparent;
       font-weight: 800;
     }
   }
-  // tbody{
-  //   tr{
-  //     &:last-child{
-  //       td{
-  //         border-bottom-color:transparent;
-  //       }
-  //     }
-  //   }
-  // }
 }
