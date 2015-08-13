@@ -1,4 +1,4 @@
-# CommonCss
+# CommonCss[废弃]
 
 css构建骨架，适应项目的快速搭建
 
